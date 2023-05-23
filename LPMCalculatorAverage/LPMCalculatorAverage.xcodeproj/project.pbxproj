@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C182F8E19EC61A40045D4CC7 /* UE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F9B250D4D751A2F22251 /* UE.swift */; };
+		ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */; };
+		ECFD02DF2A1CE78B0090F9C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */; };
+		ECFD02E12A1CE78C0090F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */; };
+		ECFD02E42A1CE78C0090F9C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD02E32A1CE78C0090F9C4 /* Preview Assets.xcassets */; };
+		ECFD02EE2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02ED2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift */; };
+		ECFD02F82A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02F72A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.swift */; };
+		ECFD02FA2A1CE78C0090F9C4 /* LPMCalculatorAverageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02F92A1CE78C0090F9C4 /* LPMCalculatorAverageUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECFD02EA2A1CE78C0090F9C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECFD02D12A1CE78B0090F9C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECFD02D82A1CE78B0090F9C4;
+			remoteInfo = LPMCalculatorAverage;
+		};
+		ECFD02F42A1CE78C0090F9C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECFD02D12A1CE78B0090F9C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECFD02D82A1CE78B0090F9C4;
+			remoteInfo = LPMCalculatorAverage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C182F9B250D4D751A2F22251 /* UE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UE.swift; sourceTree = "<group>"; };
+		ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPMCalculatorAverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPMCalculatorAverageApp.swift; sourceTree = "<group>"; };
+		ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECFD02E32A1CE78C0090F9C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECFD02E92A1CE78C0090F9C4 /* LPMCalculatorAverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPMCalculatorAverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFD02ED2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPMCalculatorAverageTests.swift; sourceTree = "<group>"; };
+		ECFD02F32A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPMCalculatorAverageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFD02F72A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPMCalculatorAverageUITests.swift; sourceTree = "<group>"; };
+		ECFD02F92A1CE78C0090F9C4 /* LPMCalculatorAverageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPMCalculatorAverageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECFD02D62A1CE78B0090F9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFD02E62A1CE78C0090F9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFD02F02A1CE78C0090F9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECFD02D02A1CE78B0090F9C4 = {
+			isa = PBXGroup;
+			children = (
+				ECFD03062A1CE9C20090F9C4 /* Models */,
+				ECFD02DB2A1CE78B0090F9C4 /* LPMCalculatorAverage */,
+				ECFD02EC2A1CE78C0090F9C4 /* LPMCalculatorAverageTests */,
+				ECFD02F62A1CE78C0090F9C4 /* LPMCalculatorAverageUITests */,
+				ECFD02DA2A1CE78B0090F9C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECFD02DA2A1CE78B0090F9C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */,
+				ECFD02E92A1CE78C0090F9C4 /* LPMCalculatorAverageTests.xctest */,
+				ECFD02F32A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECFD02DB2A1CE78B0090F9C4 /* LPMCalculatorAverage */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */,
+				ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */,
+				ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */,
+				ECFD02E22A1CE78C0090F9C4 /* Preview Content */,
+			);
+			path = LPMCalculatorAverage;
+			sourceTree = "<group>";
+		};
+		ECFD02E22A1CE78C0090F9C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD02E32A1CE78C0090F9C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECFD02EC2A1CE78C0090F9C4 /* LPMCalculatorAverageTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD02ED2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift */,
+			);
+			path = LPMCalculatorAverageTests;
+			sourceTree = "<group>";
+		};
+		ECFD02F62A1CE78C0090F9C4 /* LPMCalculatorAverageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD02F72A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.swift */,
+				ECFD02F92A1CE78C0090F9C4 /* LPMCalculatorAverageUITestsLaunchTests.swift */,
+			);
+			path = LPMCalculatorAverageUITests;
+			sourceTree = "<group>";
+		};
+		ECFD03062A1CE9C20090F9C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C182F9B250D4D751A2F22251 /* UE.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECFD02D82A1CE78B0090F9C4 /* LPMCalculatorAverage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFD02FD2A1CE78C0090F9C4 /* Build configuration list for PBXNativeTarget "LPMCalculatorAverage" */;
+			buildPhases = (
+				ECFD02D52A1CE78B0090F9C4 /* Sources */,
+				ECFD02D62A1CE78B0090F9C4 /* Frameworks */,
+				ECFD02D72A1CE78B0090F9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPMCalculatorAverage;
+			productName = LPMCalculatorAverage;
+			productReference = ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECFD02E82A1CE78C0090F9C4 /* LPMCalculatorAverageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFD03002A1CE78C0090F9C4 /* Build configuration list for PBXNativeTarget "LPMCalculatorAverageTests" */;
+			buildPhases = (
+				ECFD02E52A1CE78C0090F9C4 /* Sources */,
+				ECFD02E62A1CE78C0090F9C4 /* Frameworks */,
+				ECFD02E72A1CE78C0090F9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECFD02EB2A1CE78C0090F9C4 /* PBXTargetDependency */,
+			);
+			name = LPMCalculatorAverageTests;
+			productName = LPMCalculatorAverageTests;
+			productReference = ECFD02E92A1CE78C0090F9C4 /* LPMCalculatorAverageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECFD02F22A1CE78C0090F9C4 /* LPMCalculatorAverageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFD03032A1CE78C0090F9C4 /* Build configuration list for PBXNativeTarget "LPMCalculatorAverageUITests" */;
+			buildPhases = (
+				ECFD02EF2A1CE78C0090F9C4 /* Sources */,
+				ECFD02F02A1CE78C0090F9C4 /* Frameworks */,
+				ECFD02F12A1CE78C0090F9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECFD02F52A1CE78C0090F9C4 /* PBXTargetDependency */,
+			);
+			name = LPMCalculatorAverageUITests;
+			productName = LPMCalculatorAverageUITests;
+			productReference = ECFD02F32A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECFD02D12A1CE78B0090F9C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					ECFD02D82A1CE78B0090F9C4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					ECFD02E82A1CE78C0090F9C4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ECFD02D82A1CE78B0090F9C4;
+					};
+					ECFD02F22A1CE78C0090F9C4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ECFD02D82A1CE78B0090F9C4;
+					};
+				};
+			};
+			buildConfigurationList = ECFD02D42A1CE78B0090F9C4 /* Build configuration list for PBXProject "LPMCalculatorAverage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECFD02D02A1CE78B0090F9C4;
+			productRefGroup = ECFD02DA2A1CE78B0090F9C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECFD02D82A1CE78B0090F9C4 /* LPMCalculatorAverage */,
+				ECFD02E82A1CE78C0090F9C4 /* LPMCalculatorAverageTests */,
+				ECFD02F22A1CE78C0090F9C4 /* LPMCalculatorAverageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECFD02D72A1CE78B0090F9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFD02E42A1CE78C0090F9C4 /* Preview Assets.xcassets in Resources */,
+				ECFD02E12A1CE78C0090F9C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFD02E72A1CE78C0090F9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFD02F12A1CE78C0090F9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECFD02D52A1CE78B0090F9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFD02DF2A1CE78B0090F9C4 /* ContentView.swift in Sources */,
+				ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */,
+				C182F8E19EC61A40045D4CC7 /* UE.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFD02E52A1CE78C0090F9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFD02EE2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFD02EF2A1CE78C0090F9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFD02FA2A1CE78C0090F9C4 /* LPMCalculatorAverageUITestsLaunchTests.swift in Sources */,
+				ECFD02F82A1CE78C0090F9C4 /* LPMCalculatorAverageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECFD02EB2A1CE78C0090F9C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECFD02D82A1CE78B0090F9C4 /* LPMCalculatorAverage */;
+			targetProxy = ECFD02EA2A1CE78C0090F9C4 /* PBXContainerItemProxy */;
+		};
+		ECFD02F52A1CE78C0090F9C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECFD02D82A1CE78B0090F9C4 /* LPMCalculatorAverage */;
+			targetProxy = ECFD02F42A1CE78C0090F9C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ECFD02FB2A1CE78C0090F9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECFD02FC2A1CE78C0090F9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECFD02FE2A1CE78C0090F9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LPMCalculatorAverage/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECFD02FF2A1CE78C0090F9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LPMCalculatorAverage/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECFD03012A1CE78C0090F9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPMCalculatorAverage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LPMCalculatorAverage";
+			};
+			name = Debug;
+		};
+		ECFD03022A1CE78C0090F9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPMCalculatorAverage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LPMCalculatorAverage";
+			};
+			name = Release;
+		};
+		ECFD03042A1CE78C0090F9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LPMCalculatorAverage;
+			};
+			name = Debug;
+		};
+		ECFD03052A1CE78C0090F9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LPMCalculatorAverage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECFD02D42A1CE78B0090F9C4 /* Build configuration list for PBXProject "LPMCalculatorAverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFD02FB2A1CE78C0090F9C4 /* Debug */,
+				ECFD02FC2A1CE78C0090F9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFD02FD2A1CE78C0090F9C4 /* Build configuration list for PBXNativeTarget "LPMCalculatorAverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFD02FE2A1CE78C0090F9C4 /* Debug */,
+				ECFD02FF2A1CE78C0090F9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFD03002A1CE78C0090F9C4 /* Build configuration list for PBXNativeTarget "LPMCalculatorAverageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFD03012A1CE78C0090F9C4 /* Debug */,
+				ECFD03022A1CE78C0090F9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFD03032A1CE78C0090F9C4 /* Build configuration list for PBXNativeTarget "LPMCalculatorAverageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFD03042A1CE78C0090F9C4 /* Debug */,
+				ECFD03052A1CE78C0090F9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECFD02D12A1CE78B0090F9C4 /* Project object */;
+}
