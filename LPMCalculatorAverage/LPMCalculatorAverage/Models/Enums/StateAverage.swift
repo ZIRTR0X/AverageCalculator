@@ -4,3 +4,7 @@
 
 import Foundation
 
+public enum StateAverage {
+    case Final
+    case Preview
+}

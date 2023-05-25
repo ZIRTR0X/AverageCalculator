@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C182F8E19EC61A40045D4CC7 /* UE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F9B250D4D751A2F22251 /* UE.swift */; };
+		C182F1637760C073A5B32C59 /* UE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F44CCFD23537C5CFEE9E /* UE.swift */; };
+		C182F9913766FF0AC7C31E88 /* Subject.swift in Resources */ = {isa = PBXBuildFile; fileRef = C182FF0907F1583EA5A0EDA1 /* Subject.swift */; };
+		C182FBF011AC326846067C3F /* Grade.swift in Resources */ = {isa = PBXBuildFile; fileRef = C182FCBAE6D7A47758B36351 /* Grade.swift */; };
+		C182FCCF6F0AF51A6ED35F81 /* StateAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182FBC0384737FED23731B8 /* StateAverage.swift */; };
+		ECAD03432A1F85D3000F33D2 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03422A1F85D3000F33D2 /* home.swift */; };
+		ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03442A1F867B000F33D2 /* blocs.swift */; };
+		ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */; };
+		ECAD034B2A1F86EA000F33D2 /* UEDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD034A2A1F86EA000F33D2 /* UEDetail.swift */; };
+		ECAD034D2A1F8705000F33D2 /* UEPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD034C2A1F8705000F33D2 /* UEPage.swift */; };
+		ECAD034F2A1FF7E9000F33D2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAD034E2A1FF7E9000F33D2 /* Color.xcassets */; };
 		ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */; };
 		ECFD02DF2A1CE78B0090F9C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */; };
 		ECFD02E12A1CE78C0090F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */; };
@@ -35,7 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C182F9B250D4D751A2F22251 /* UE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UE.swift; sourceTree = "<group>"; };
+		C182F44CCFD23537C5CFEE9E /* UE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UE.swift; sourceTree = "<group>"; };
+		C182FBC0384737FED23731B8 /* StateAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateAverage.swift; sourceTree = "<group>"; };
+		C182FCBAE6D7A47758B36351 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		C182FF0907F1583EA5A0EDA1 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		ECAD03422A1F85D3000F33D2 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		ECAD03442A1F867B000F33D2 /* blocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blocs.swift; sourceTree = "<group>"; };
+		ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEsDetails.swift; sourceTree = "<group>"; };
+		ECAD034A2A1F86EA000F33D2 /* UEDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEDetail.swift; sourceTree = "<group>"; };
+		ECAD034C2A1F8705000F33D2 /* UEPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEPage.swift; sourceTree = "<group>"; };
+		ECAD034E2A1FF7E9000F33D2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPMCalculatorAverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPMCalculatorAverageApp.swift; sourceTree = "<group>"; };
 		ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,10 +91,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C182F276E6A5A71442564D03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD03422A1F85D3000F33D2 /* home.swift */,
+				ECAD03442A1F867B000F33D2 /* blocs.swift */,
+				ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */,
+				ECAD034A2A1F86EA000F33D2 /* UEDetail.swift */,
+				ECAD034C2A1F8705000F33D2 /* UEPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C182F64F0A64535B0800962B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C182FBC0384737FED23731B8 /* StateAverage.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C182F6558E1F430FE20A9E62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C182F44CCFD23537C5CFEE9E /* UE.swift */,
+				C182F64F0A64535B0800962B /* Enums */,
+				C182FF0907F1583EA5A0EDA1 /* Subject.swift */,
+				C182FCBAE6D7A47758B36351 /* Grade.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C182F99915651B210D5DE73F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		ECFD02D02A1CE78B0090F9C4 = {
 			isa = PBXGroup;
 			children = (
-				ECFD03062A1CE9C20090F9C4 /* Models */,
 				ECFD02DB2A1CE78B0090F9C4 /* LPMCalculatorAverage */,
 				ECFD02EC2A1CE78C0090F9C4 /* LPMCalculatorAverageTests */,
 				ECFD02F62A1CE78C0090F9C4 /* LPMCalculatorAverageUITests */,
@@ -101,6 +156,10 @@
 				ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */,
 				ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */,
 				ECFD02E22A1CE78C0090F9C4 /* Preview Content */,
+				C182F6558E1F430FE20A9E62 /* Models */,
+				C182F276E6A5A71442564D03 /* Views */,
+				C182F99915651B210D5DE73F /* ViewModels */,
+				ECAD034E2A1FF7E9000F33D2 /* Color.xcassets */,
 			);
 			path = LPMCalculatorAverage;
 			sourceTree = "<group>";
@@ -128,14 +187,6 @@
 				ECFD02F92A1CE78C0090F9C4 /* LPMCalculatorAverageUITestsLaunchTests.swift */,
 			);
 			path = LPMCalculatorAverageUITests;
-			sourceTree = "<group>";
-		};
-		ECFD03062A1CE9C20090F9C4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C182F9B250D4D751A2F22251 /* UE.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +295,9 @@
 			files = (
 				ECFD02E42A1CE78C0090F9C4 /* Preview Assets.xcassets in Resources */,
 				ECFD02E12A1CE78C0090F9C4 /* Assets.xcassets in Resources */,
+				ECAD034F2A1FF7E9000F33D2 /* Color.xcassets in Resources */,
+				C182F9913766FF0AC7C31E88 /* Subject.swift in Resources */,
+				C182FBF011AC326846067C3F /* Grade.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +324,13 @@
 			files = (
 				ECFD02DF2A1CE78B0090F9C4 /* ContentView.swift in Sources */,
 				ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */,
-				C182F8E19EC61A40045D4CC7 /* UE.swift in Sources */,
+				C182F1637760C073A5B32C59 /* UE.swift in Sources */,
+				ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */,
+				ECAD03432A1F85D3000F33D2 /* home.swift in Sources */,
+				ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */,
+				ECAD034B2A1F86EA000F33D2 /* UEDetail.swift in Sources */,
+				C182FCCF6F0AF51A6ED35F81 /* StateAverage.swift in Sources */,
+				ECAD034D2A1F8705000F33D2 /* UEPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
