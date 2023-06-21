@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import CalculatorAverageVM
+import Stub
 
 struct UEsDetails: View {
+    @ObservedObject
+    var manager: ManagerVM
+
     var body: some View {
         VStack{
             HStack {
@@ -25,16 +30,9 @@ struct UEsDetails: View {
                 Spacer()
             }
             VStack{
-                Divider()
-                UEDetail()
-                Divider()
-                UEDetail()
-                Divider()
-                UEDetail()
-                Divider()
-                UEDetail()
-                Divider()
-                UEDetail()
+                ForEach(manager.ueVMs) { ue in
+                    UEDetail(ueVM: ue, showEdit: true)
+                }
             }
             
         }
@@ -47,6 +45,6 @@ struct UEsDetails: View {
 
 struct UEsDetails_Previews: PreviewProvider {
     static var previews: some View {
-        UEsDetails()
+        UEsDetails(manager: ManagerVM(withUEs: StubData().ueVMs))
     }
 }

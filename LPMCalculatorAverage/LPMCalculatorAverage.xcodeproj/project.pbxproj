@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C182F1637760C073A5B32C59 /* UE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F44CCFD23537C5CFEE9E /* UE.swift */; };
-		C182F9913766FF0AC7C31E88 /* Subject.swift in Resources */ = {isa = PBXBuildFile; fileRef = C182FF0907F1583EA5A0EDA1 /* Subject.swift */; };
-		C182FBF011AC326846067C3F /* Grade.swift in Resources */ = {isa = PBXBuildFile; fileRef = C182FCBAE6D7A47758B36351 /* Grade.swift */; };
-		C182FCCF6F0AF51A6ED35F81 /* StateAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182FBC0384737FED23731B8 /* StateAverage.swift */; };
+		C182FD032813DB511238F150 /* subjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F9A6B34A361536F4F99C /* subjectDetail.swift */; };
+		EC65B83C2A3997C9006F101C /* Stub in Frameworks */ = {isa = PBXBuildFile; productRef = EC65B83B2A3997C9006F101C /* Stub */; };
 		ECAD03432A1F85D3000F33D2 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03422A1F85D3000F33D2 /* home.swift */; };
 		ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03442A1F867B000F33D2 /* blocs.swift */; };
 		ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */; };
 		ECAD034B2A1F86EA000F33D2 /* UEDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD034A2A1F86EA000F33D2 /* UEDetail.swift */; };
 		ECAD034D2A1F8705000F33D2 /* UEPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD034C2A1F8705000F33D2 /* UEPage.swift */; };
 		ECAD034F2A1FF7E9000F33D2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAD034E2A1FF7E9000F33D2 /* Color.xcassets */; };
+		ECD267522A2640D500BF4001 /* CalculatorAverageLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = ECD267512A2640D500BF4001 /* CalculatorAverageLibrary */; };
+		ECD267542A2640DA00BF4001 /* CalculatorAverageVM in Frameworks */ = {isa = PBXBuildFile; productRef = ECD267532A2640DA00BF4001 /* CalculatorAverageVM */; };
 		ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */; };
-		ECFD02DF2A1CE78B0090F9C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */; };
 		ECFD02E12A1CE78C0090F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */; };
 		ECFD02E42A1CE78C0090F9C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD02E32A1CE78C0090F9C4 /* Preview Assets.xcassets */; };
 		ECFD02EE2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD02ED2A1CE78C0090F9C4 /* LPMCalculatorAverageTests.swift */; };
@@ -44,19 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C182F44CCFD23537C5CFEE9E /* UE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UE.swift; sourceTree = "<group>"; };
-		C182FBC0384737FED23731B8 /* StateAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateAverage.swift; sourceTree = "<group>"; };
-		C182FCBAE6D7A47758B36351 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
-		C182FF0907F1583EA5A0EDA1 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		C182F9A6B34A361536F4F99C /* subjectDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subjectDetail.swift; sourceTree = "<group>"; };
 		ECAD03422A1F85D3000F33D2 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		ECAD03442A1F867B000F33D2 /* blocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blocs.swift; sourceTree = "<group>"; };
 		ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEsDetails.swift; sourceTree = "<group>"; };
 		ECAD034A2A1F86EA000F33D2 /* UEDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEDetail.swift; sourceTree = "<group>"; };
 		ECAD034C2A1F8705000F33D2 /* UEPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEPage.swift; sourceTree = "<group>"; };
 		ECAD034E2A1FF7E9000F33D2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		ECD2674E2A26404A00BF4001 /* CalculatorAverageLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CalculatorAverageLibrary; path = ../CalculatorAverageLibrary; sourceTree = "<group>"; };
+		ECD2674F2A26406E00BF4001 /* CalculatorAverageLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CalculatorAverageLibrary; path = ../CalculatorAverageLibrary; sourceTree = "<group>"; };
 		ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPMCalculatorAverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPMCalculatorAverageApp.swift; sourceTree = "<group>"; };
-		ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECFD02E32A1CE78C0090F9C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECFD02E92A1CE78C0090F9C4 /* LPMCalculatorAverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPMCalculatorAverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD267522A2640D500BF4001 /* CalculatorAverageLibrary in Frameworks */,
+				EC65B83C2A3997C9006F101C /* Stub in Frameworks */,
+				ECD267542A2640DA00BF4001 /* CalculatorAverageVM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,43 +99,36 @@
 				ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */,
 				ECAD034A2A1F86EA000F33D2 /* UEDetail.swift */,
 				ECAD034C2A1F8705000F33D2 /* UEPage.swift */,
+				C182F9A6B34A361536F4F99C /* subjectDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C182F64F0A64535B0800962B /* Enums */ = {
+		ECD2674D2A26404A00BF4001 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				C182FBC0384737FED23731B8 /* StateAverage.swift */,
+				ECD2674E2A26404A00BF4001 /* CalculatorAverageLibrary */,
+				ECD2674F2A26406E00BF4001 /* CalculatorAverageLibrary */,
 			);
-			path = Enums;
+			name = Packages;
 			sourceTree = "<group>";
 		};
-		C182F6558E1F430FE20A9E62 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C182F44CCFD23537C5CFEE9E /* UE.swift */,
-				C182F64F0A64535B0800962B /* Enums */,
-				C182FF0907F1583EA5A0EDA1 /* Subject.swift */,
-				C182FCBAE6D7A47758B36351 /* Grade.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C182F99915651B210D5DE73F /* ViewModels */ = {
+		ECD267502A2640D500BF4001 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ECFD02D02A1CE78B0090F9C4 = {
 			isa = PBXGroup;
 			children = (
+				ECD2674D2A26404A00BF4001 /* Packages */,
 				ECFD02DB2A1CE78B0090F9C4 /* LPMCalculatorAverage */,
 				ECFD02EC2A1CE78C0090F9C4 /* LPMCalculatorAverageTests */,
 				ECFD02F62A1CE78C0090F9C4 /* LPMCalculatorAverageUITests */,
 				ECFD02DA2A1CE78B0090F9C4 /* Products */,
+				ECD267502A2640D500BF4001 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,12 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				ECFD02DC2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift */,
-				ECFD02DE2A1CE78B0090F9C4 /* ContentView.swift */,
 				ECFD02E02A1CE78C0090F9C4 /* Assets.xcassets */,
 				ECFD02E22A1CE78C0090F9C4 /* Preview Content */,
-				C182F6558E1F430FE20A9E62 /* Models */,
 				C182F276E6A5A71442564D03 /* Views */,
-				C182F99915651B210D5DE73F /* ViewModels */,
 				ECAD034E2A1FF7E9000F33D2 /* Color.xcassets */,
 			);
 			path = LPMCalculatorAverage;
@@ -205,6 +195,11 @@
 			dependencies = (
 			);
 			name = LPMCalculatorAverage;
+			packageProductDependencies = (
+				ECD267512A2640D500BF4001 /* CalculatorAverageLibrary */,
+				ECD267532A2640DA00BF4001 /* CalculatorAverageVM */,
+				EC65B83B2A3997C9006F101C /* Stub */,
+			);
 			productName = LPMCalculatorAverage;
 			productReference = ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */;
 			productType = "com.apple.product-type.application";
@@ -296,8 +291,6 @@
 				ECFD02E42A1CE78C0090F9C4 /* Preview Assets.xcassets in Resources */,
 				ECFD02E12A1CE78C0090F9C4 /* Assets.xcassets in Resources */,
 				ECAD034F2A1FF7E9000F33D2 /* Color.xcassets in Resources */,
-				C182F9913766FF0AC7C31E88 /* Subject.swift in Resources */,
-				C182FBF011AC326846067C3F /* Grade.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,15 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECFD02DF2A1CE78B0090F9C4 /* ContentView.swift in Sources */,
 				ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */,
-				C182F1637760C073A5B32C59 /* UE.swift in Sources */,
 				ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */,
 				ECAD03432A1F85D3000F33D2 /* home.swift in Sources */,
 				ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */,
 				ECAD034B2A1F86EA000F33D2 /* UEDetail.swift in Sources */,
-				C182FCCF6F0AF51A6ED35F81 /* StateAverage.swift in Sources */,
 				ECAD034D2A1F8705000F33D2 /* UEPage.swift in Sources */,
+				C182FD032813DB511238F150 /* subjectDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,9 +477,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LPMCalculatorAverage/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DRCMU7YM68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -503,6 +498,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = appleIUT_TP2022;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,9 +511,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LPMCalculatorAverage/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DRCMU7YM68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -531,6 +532,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.uca.iut.LPMCalculatorAverage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = appleIUT_TP2022;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -649,6 +652,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC65B83B2A3997C9006F101C /* Stub */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Stub;
+		};
+		ECD267512A2640D500BF4001 /* CalculatorAverageLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CalculatorAverageLibrary;
+		};
+		ECD267532A2640DA00BF4001 /* CalculatorAverageVM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CalculatorAverageVM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECFD02D12A1CE78B0090F9C4 /* Project object */;
 }

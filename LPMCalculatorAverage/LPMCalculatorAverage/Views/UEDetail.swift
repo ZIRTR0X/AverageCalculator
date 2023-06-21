@@ -6,48 +6,63 @@
 //
 
 import SwiftUI
+import CalculatorAverageVM
+import Stub
 
 struct UEDetail: View {
-    @State private var scale: CGFloat = 1.5
-    
+    @ObservedObject var ueVM: UEVM
+    var showEdit: Bool = false
     
     var body: some View {
-        var note = ((self.scale/1.5)*10)
-        var vrainote = note >= 20 ? 20 : note <= 0 ? 0 : note
-        
-        VStack{
-            HStack{
-                Text("UE1 Génie Logiciel")
-                Spacer()
-                Text("6")
-                    .padding(.trailing, 10)
-                
-                    .padding(.trailing, 20)
-                Image(systemName: "square.and.pencil")
-            }
-            .padding(.leading, 20)
-            .padding(.bottom, 15)
+        let scaledNote = (ueVM.average / 10) * 1.5
+        let capsuleSize = calculateCapsuleSize(note: ueVM.average)
+
+        HStack{
             
-            HStack {
-                Capsule()
-                    .fill(scale >= 1.5 ? Color.green : Color.red)
-                    .frame(width: 75 * (scale >= 3.0 ? 3.1 : scale <= 0.1 ? 0.1 : scale), height: 25)
-                        .gesture(
-                            DragGesture()
-                                .onChanged { value in
-                                    self.scale = 1 + value.translation.width / 75
-                                }
-                        )
+            VStack{
+                HStack{
+                    Text(ueVM.name)
+                    Spacer()
+                    Text("\(ueVM.coefficient)")
+                        .padding(.trailing, 30)
+                }
+                .padding(.leading, 20)
+                .padding(.bottom, 15)
                 
-                Text("\(vrainote, specifier: "%.2f")")
-                Spacer()
+                HStack {
+                    Capsule()
+                        .fill(scaledNote >= 1.5 ? Color.green : Color.red)
+                        .frame(width: capsuleSize, height: 25)
+                    
+                    Text("\(ueVM.average, specifier: "%.2f")")
+                    Spacer()
+                }
+                Divider()
             }
+            
+            NavigationLink (destination: UEPage(ueVM: ueVM)) {
+                Image(systemName: "square.and.pencil")
+                    .foregroundColor(Color.blue)
+                    .opacity(showEdit ? 1 : 0)
+                    .disabled(!showEdit)
+            }
+
+            
         }
+        
+    }
+
+    func calculateCapsuleSize(note: Double) -> CGFloat {
+        let scaledNote = (note / 10) * 1.5
+        let clampedNote = max(0.1, min(3.0, scaledNote))
+        let capsuleSize = UIScreen.main.bounds.width * 0.15
+        return capsuleSize * clampedNote
     }
 }
 
+
 struct UEDetail_Previews: PreviewProvider {
     static var previews: some View {
-        UEDetail()
+        UEDetail(ueVM: StubData().ueVMs[1])
     }
 }

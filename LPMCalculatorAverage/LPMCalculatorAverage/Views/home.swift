@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import CalculatorAverageLibrary
+import CalculatorAverageVM
+import Stub
 
 struct home: View {
+//    @StateObject
+//    var UEs: [UEVM]
+    @StateObject
+    var manager: ManagerVM
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -18,18 +26,18 @@ struct home: View {
                     .padding(10)
                     
                     VStack{
-                        UEsDetails()
+                        UEsDetails(manager: manager)
                     }
                     .padding(10)
                 }
             }
+            .navigationTitle("Calculette")
         }
-        .navigationTitle("Calculete")
     }
 }
 
 struct home_Previews: PreviewProvider {
     static var previews: some View {
-        home()
+        home(manager: ManagerVM(withUEs: StubData().ueVMs))
     }
 }

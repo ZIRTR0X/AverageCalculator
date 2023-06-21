@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Stub">
+   </FileRef>
+   <FileRef
+      location = "group:CalculatorAverageLibrary">
+   </FileRef>
+   <FileRef
+      location = "group:CalculatorAverageVM">
+   </FileRef>
+   <FileRef
+      location = "group:LPMCalculatorAverage/LPMCalculatorAverage.xcodeproj">
+   </FileRef>
+</Workspace>
