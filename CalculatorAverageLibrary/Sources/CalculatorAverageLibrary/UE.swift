@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct UE : Identifiable, Equatable{
+public struct UE : Identifiable, Equatable, Decodable, Encodable{
     
     public static func == (lhs: UE, rhs: UE) -> Bool {
         lhs.id == rhs.id
@@ -64,5 +64,5 @@ public struct UE : Identifiable, Equatable{
     public mutating func addSubject(subject: Subject) {
         _subjects.append(subject);
     }
-
 }
+

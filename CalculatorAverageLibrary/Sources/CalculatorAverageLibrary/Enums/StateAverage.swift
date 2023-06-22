@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum StateAverage {
+public enum StateAverage : Encodable, Decodable{
     case Final
     case Preview
 }

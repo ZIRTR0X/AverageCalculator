@@ -19,7 +19,6 @@ struct UEDetail: View {
         let capsuleSize = calculateCapsuleSize(note: note)
 
         HStack{
-            
             VStack{
                 HStack{
                     Text(ueVM.name)

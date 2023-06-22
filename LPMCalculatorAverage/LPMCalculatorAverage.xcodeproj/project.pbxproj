@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C182FD032813DB511238F150 /* subjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F9A6B34A361536F4F99C /* subjectDetail.swift */; };
 		EC65B83C2A3997C9006F101C /* Stub in Frameworks */ = {isa = PBXBuildFile; productRef = EC65B83B2A3997C9006F101C /* Stub */; };
+		ECA546152A45007D00E40D36 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = ECA546142A45007D00E40D36 /* Data */; };
 		ECAD03432A1F85D3000F33D2 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03422A1F85D3000F33D2 /* home.swift */; };
 		ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03442A1F867B000F33D2 /* blocs.swift */; };
 		ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */; };
@@ -70,6 +71,7 @@
 			files = (
 				ECD267522A2640D500BF4001 /* CalculatorAverageLibrary in Frameworks */,
 				EC65B83C2A3997C9006F101C /* Stub in Frameworks */,
+				ECA546152A45007D00E40D36 /* Data in Frameworks */,
 				ECD267542A2640DA00BF4001 /* CalculatorAverageVM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +201,7 @@
 				ECD267512A2640D500BF4001 /* CalculatorAverageLibrary */,
 				ECD267532A2640DA00BF4001 /* CalculatorAverageVM */,
 				EC65B83B2A3997C9006F101C /* Stub */,
+				ECA546142A45007D00E40D36 /* Data */,
 			);
 			productName = LPMCalculatorAverage;
 			productReference = ECFD02D92A1CE78B0090F9C4 /* LPMCalculatorAverage.app */;
@@ -657,6 +660,10 @@
 		EC65B83B2A3997C9006F101C /* Stub */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Stub;
+		};
+		ECA546142A45007D00E40D36 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
 		};
 		ECD267512A2640D500BF4001 /* CalculatorAverageLibrary */ = {
 			isa = XCSwiftPackageProductDependency;

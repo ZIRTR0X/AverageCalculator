@@ -1,32 +1,37 @@
-//
-//  LPMCalculatorAverageApp.swift
-//  LPMCalculatorAverage
-//
-//  Created by etudiant on 23/05/2023.
-//
-
 import SwiftUI
 import CalculatorAverageLibrary
 import CalculatorAverageVM
 import Stub
+import Data
 
 @main
 struct LPMCalculatorAverageApp: App {
-    /*@StateObject
-    var ueList: [UE] = [
-        UE(withId: 1, andName: "UE1 Génie Logiciel", andAverage: 13.3, andCoefficent: 6, andSubjects: [
-            Subject(withId: 1, andName: "UE1 Processus de développement ", andAverage: 10, andCoefficent: 4, andState: StateAverage.Preview),
-            Subject(withId: 2, andName: "UE1 Programmation Objets", andAverage: 15, andCoefficent: 9, andState: StateAverage.Preview),
-            Subject(withId: 3, andName: "UE1 Qualité de développpement", andAverage: 12, andCoefficent: 5, andState: StateAverage.Preview),
-            Subject(withId: 4, andName: "UE1 Remise à niveau objets", andAverage: 14, andCoefficent: 4, andState: StateAverage.Preview)
-        ])
-    ]*/
-    
-    var managerVM : ManagerVM = ManagerVM(withUEs: StubData().ueVMs)
+    private let dataManager = DataManager()
+    @StateObject private var managerVM: ManagerVM = ManagerVM(withUEs: loadUEVMs())
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
             home(manager: managerVM)
+                    .onChange(of: scenePhase) { newPhase in
+                        if newPhase == .inactive {
+                            saveUEVMs(managerVM.ueVMs)
+                        }
+                    }
         }
+    }
+
+    private func saveUEVMs(_ ueVMs: [UEVM]) {
+        let ueList: [UE] = ueVMs.map { $0.model }
+        dataManager.save(ue: ueList)
+    }
+
+    private static func loadUEVMs() -> [UEVM] {
+        let dataMger = DataManager()
+        guard let ueList = dataMger.load() else {
+            return StubData().ueVMs
+        }
+
+        return ueList.map { UEVM(withModel: $0) }
     }
 }

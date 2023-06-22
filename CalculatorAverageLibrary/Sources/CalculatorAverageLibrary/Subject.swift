@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Subject: Identifiable, Equatable{
+public struct Subject: Identifiable, Equatable, Decodable, Encodable{
     public static func ==(lhs: Subject, rhs: Subject) -> Bool {
         if(lhs.id == rhs.id && lhs.coefficient == rhs.coefficient) {
             return true
