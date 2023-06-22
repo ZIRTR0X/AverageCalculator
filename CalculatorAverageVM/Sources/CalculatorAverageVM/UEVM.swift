@@ -17,9 +17,7 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             if model.name != name {
                 name = model.name
             }
-            /*if model.average != average {
-                average = model.average
-            }*/
+
             if model.coefficient != coefficient {
                 coefficient = model.coefficient
             }
@@ -29,11 +27,6 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
 
             if !model.subjects.compare(to: subjects.map({$0.model})){
                 subjects = model.subjects.map({SubjectVM(withSubject: $0)})
-                //adds itself as a reference in every NounoursVM it owns,
-                //in order to be notified by their changes
-                 /*self.subjects.forEach { svm in
-                     svm.ue = self
-                 }*/
             }
 
             if model.isProject != isProject {
