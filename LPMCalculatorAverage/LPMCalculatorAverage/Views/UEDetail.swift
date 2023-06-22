@@ -26,8 +26,6 @@ struct UEDetail: View {
                     Spacer()
                     Text("\(ueVM.coefficient)")
                         .padding(.trailing, 30)
-                    Text("\(ueVM.average, specifier: "%.2f")")
-                        .padding(.trailing, 30)
                 }
                 .padding(.leading, 20)
                 .padding(.bottom, 15)

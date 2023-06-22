@@ -16,8 +16,8 @@ struct UEPage: View {
         NavigationStack {
             ScrollView{
                 VStack {
-//                    UEDetail()
-//                        .padding(.top, 20)
+                    UEDetail(ueVM: ueVM)
+                        .padding(30)
                     VStack {
                         HStack {
                             Image(systemName: "multiply.circle.fill")
