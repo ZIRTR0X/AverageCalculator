@@ -21,7 +21,7 @@ struct home: View {
             ScrollView {
                 VStack{
                     VStack{
-                        blocs()
+                        blocs(manager: manager)
                     }
                     .padding(10)
                     

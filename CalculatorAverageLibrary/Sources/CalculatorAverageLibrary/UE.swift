@@ -45,13 +45,20 @@ public struct UE : Identifiable, Equatable{
         set {_subjects = newValue;}
     }
 
-    public init(withName name: String, andAverage average: Double?, andCoefficent coefficient: Int, andSubjects subjects: [Subject], andState state: StateAverage) {
+    private var _isProject: Bool;
+    public var isProject: Bool {
+        get {_isProject;}
+        set {_isProject = newValue;}
+    }
+
+    public init(withName name: String, andAverage average: Double?, andCoefficent coefficient: Int, andSubjects subjects: [Subject], andState state: StateAverage, andIsProject isProject: Bool = false) {
         id = UUID();
         _name = name;
         _average = average ?? 0.0;
         _coefficient = coefficient;
         _subjects = subjects;
         _state = state;
+        _isProject = isProject;
     }
 
     public mutating func addSubject(subject: Subject) {

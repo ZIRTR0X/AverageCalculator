@@ -12,7 +12,7 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
     
     var managerVM: ManagerVM?
     
-    @Published public var model: UE = UE(withName: "", andAverage: 0, andCoefficent: 0, andSubjects: [], andState: StateAverage.Preview) {
+    @Published public var model: UE = UE(withName: "", andAverage: 0, andCoefficent: 0, andSubjects: [], andState: StateAverage.Preview, andIsProject: false) {
         didSet {
             if model.name != name {
                 name = model.name
@@ -35,6 +35,11 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
                      svm.ue = self
                  }*/
             }
+
+            if model.isProject != isProject {
+                isProject = model.isProject
+            }
+
             self.subjects.forEach { svm in
                 if svm.ue == nil {
                     svm.ue = self
@@ -91,6 +96,16 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             let someModelSubjects: [Subject] = subjects.map({$0.model})
             if !model.subjects.compare(to: someModelSubjects){
                 model.subjects = subjects.map({$0.model})
+            }
+            self.notifyChanged()
+        }
+    }
+
+    @Published
+    public var isProject: Bool = false {
+        didSet {
+            if model.isProject != isProject {
+                model.isProject = isProject
             }
             self.notifyChanged()
         }

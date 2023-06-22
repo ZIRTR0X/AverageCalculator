@@ -14,8 +14,8 @@ public struct StubData {
         UE(withName: "UE 3 : Insertion Professionnelle", andAverage: 11, andCoefficent: 6, andSubjects: [], andState: StateAverage.Preview),
         UE(withName: "UE 4 : Technologies Mobiles 1", andAverage: 20, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview),
         UE(withName: "UE 5 : Technologies Mobiles 2", andAverage: 0, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview),
-        UE(withName: "UE 6 : Projet", andAverage: 0.1, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview),
-        UE(withName: "UE 7 : Stage", andAverage: 0, andCoefficent: 15, andSubjects: [], andState: StateAverage.Preview)
+        UE(withName: "UE 6 : Projet", andAverage: 0.1, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview, andIsProject: true),
+        UE(withName: "UE 7 : Stage", andAverage: 0, andCoefficent: 15, andSubjects: [], andState: StateAverage.Preview, andIsProject: true)
     ]
     private var subjectsVM: [[SubjectVM]] = [[],[],[],[],[],[],[]]
     private let subjects: [[Subject]] = [
