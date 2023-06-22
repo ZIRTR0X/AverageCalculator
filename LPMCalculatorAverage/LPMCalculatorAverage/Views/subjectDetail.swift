@@ -47,7 +47,7 @@ struct SubjectDetail: View {
                 HStack {
                     Capsule()
                             .fill(note.wrappedValue >= 10 ? Color.green : Color.red)
-                            .frame(width: capsuleSize/*self.capsuleSize * (scale >= 3.0 ? 3.1 : scale <= 0.1 ? 0.1 : scale)*/, height: 25)
+                            .frame(width: capsuleSize, height: 25)
                             .gesture(
                                     isLocked ? nil : DragGesture()
                                             .onChanged { value in
