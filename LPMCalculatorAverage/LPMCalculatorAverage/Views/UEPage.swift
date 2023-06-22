@@ -41,6 +41,18 @@ struct UEPage: View {
                     
                 }
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        ueVM.isEditing.toggle()
+                    }) {
+                        Image(systemName: "pencil.circle.fill")
+                    }
+                    .sheet(isPresented: $ueVM.isEditing) {
+                        EditUE(ue: ueVM)
+                    }
+                }
+            }
             .navigationTitle(ueVM.name)
         }
     }

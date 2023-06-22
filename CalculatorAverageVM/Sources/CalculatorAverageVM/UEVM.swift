@@ -104,6 +104,28 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
         }
     }
 
+    @Published
+    public var isEditing: Bool = false
+
+    private var copy: UEVM { UEVM(withModel: self.model) }
+
+    var editedCopy: UEVM?
+
+    public func onEditing(){
+        editedCopy = self.copy
+        isEditing = true
+    }
+
+    public func onEdited(isCancelled cancel: Bool = false) {
+        if !cancel {
+            if let editedCopy = editedCopy {
+                self.model = editedCopy.model
+            }
+        }
+        editedCopy = nil
+        isEditing = false
+    }
+
     func calculateNote() {
         if(subjects.count == 0){
             average = 0
