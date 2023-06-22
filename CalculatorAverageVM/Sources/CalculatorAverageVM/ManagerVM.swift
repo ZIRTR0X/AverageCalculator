@@ -11,11 +11,19 @@ public class ManagerVM: ObservableObject {
     @Published
     public var ueVMs: [UEVM] = []
 
-    public init(withUEs ues: [UE]) {
-        self.ueVMs = ues.map({UEVM(withModel: $0)})
+    public convenience init(withUEs ues: [UE]) {
+        self.init(withUEs: ues.map { UEVM(withModel: $0) })
     }
 
     public init(withUEs ues: [UEVM]) {
-        self.ueVMs = ues
+        ueVMs = ues
+
+        ueVMs.forEach { uevm in
+            uevm.managerVM = self
+        }
+    }
+    
+    func update(from ue: UEVM){
+        self.objectWillChange.send()
     }
 }

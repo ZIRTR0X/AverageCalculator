@@ -17,8 +17,16 @@ public class SubjectVM : ObservableObject, Identifiable, Equatable {
         self.model = subject;
     }
 
+    var ue: UEVM?
+
+    private func notifyPropertyChanged(){
+        if(ue != nil){
+            ue?.update(from: self)
+        }
+    }
+
     @Published
-    var model: Subject = Subject(withName: "", andAverage: 0, andCoefficent: 0, andIsLocked: true) {
+    var model: Subject = Subject(withName: "", andAverage: 0.0, andCoefficent: 0, andIsLocked: true) {
         didSet {
             if model.name != name {
                 name = model.name
@@ -32,6 +40,7 @@ public class SubjectVM : ObservableObject, Identifiable, Equatable {
             if model.isLocked != isLocked {
                 isLocked = model.isLocked
             }
+            notifyPropertyChanged()
         }
     }
 
@@ -45,7 +54,7 @@ public class SubjectVM : ObservableObject, Identifiable, Equatable {
     }
 
     @Published
-    public var average: Int = 0 {
+    public var average: Double = 0.0 {
         didSet {
             if model.average != average {
                 model.average = average

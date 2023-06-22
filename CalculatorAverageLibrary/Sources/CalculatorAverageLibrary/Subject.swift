@@ -9,7 +9,10 @@ import Foundation
 
 public struct Subject: Identifiable, Equatable{
     public static func ==(lhs: Subject, rhs: Subject) -> Bool {
-        lhs.id == rhs.id
+        if(lhs.id == rhs.id && lhs.coefficient == rhs.coefficient) {
+            return true
+        }
+        return false
     }
 
     public let id: UUID;
@@ -20,8 +23,8 @@ public struct Subject: Identifiable, Equatable{
         set {_name = newValue;}
     }
 
-    private var _average: Int;
-    public var average: Int {
+    private var _average: Double;
+    public var average: Double {
         get {_average;}
         set {_average = newValue;}
     }
@@ -38,7 +41,7 @@ public struct Subject: Identifiable, Equatable{
         set {_isLocked = newValue;}
     }
     
-    public init(withName name: String, andAverage average: Int, andCoefficent coefficient: Int, andIsLocked isLocked: Bool ) {
+    public init(withName name: String, andAverage average: Double, andCoefficent coefficient: Int, andIsLocked isLocked: Bool ) {
         id = UUID();
         _name = name;
         _average = average;

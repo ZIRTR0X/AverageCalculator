@@ -45,10 +45,10 @@ public struct UE : Identifiable, Equatable{
         set {_subjects = newValue;}
     }
 
-    public init(withName name: String, andAverage average: Double, andCoefficent coefficient: Int, andSubjects subjects: [Subject], andState state: StateAverage) {
+    public init(withName name: String, andAverage average: Double?, andCoefficent coefficient: Int, andSubjects subjects: [Subject], andState state: StateAverage) {
         id = UUID();
         _name = name;
-        _average = average;
+        _average = average ?? 0.0;
         _coefficient = coefficient;
         _subjects = subjects;
         _state = state;

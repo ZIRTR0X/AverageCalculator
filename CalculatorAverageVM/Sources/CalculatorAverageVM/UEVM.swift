@@ -10,14 +10,16 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
         self.model = model
     }
     
+    var managerVM: ManagerVM?
+    
     @Published public var model: UE = UE(withName: "", andAverage: 0, andCoefficent: 0, andSubjects: [], andState: StateAverage.Preview) {
         didSet {
             if model.name != name {
                 name = model.name
             }
-            if model.average != average {
+            /*if model.average != average {
                 average = model.average
-            }
+            }*/
             if model.coefficient != coefficient {
                 coefficient = model.coefficient
             }
@@ -27,8 +29,19 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
 
             if !model.subjects.compare(to: subjects.map({$0.model})){
                 subjects = model.subjects.map({SubjectVM(withSubject: $0)})
+                //adds itself as a reference in every NounoursVM it owns,
+                //in order to be notified by their changes
+                 /*self.subjects.forEach { svm in
+                     svm.ue = self
+                 }*/
             }
-
+            self.subjects.forEach { svm in
+                if svm.ue == nil {
+                    svm.ue = self
+                }
+            }
+            calculateNote()
+            self.notifyChanged()
         }
     }
     
@@ -38,6 +51,7 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             if model.name != name {
                 model.name = name
             }
+            self.notifyChanged()
         }
     }
     
@@ -47,6 +61,7 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             if model.average != average {
                 model.average = average
             }
+            self.notifyChanged()
         }
     }
     
@@ -56,6 +71,7 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             if model.coefficient != coefficient {
                 model.coefficient = coefficient
             }
+            self.notifyChanged()
         }
     }
     
@@ -65,18 +81,9 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             if model.state != state {
                 model.state = state
             }
+            self.notifyChanged()
         }
     }
-
-    /*@Published
-    var subjects: [SubjectVM] = [] {
-        didSet {
-            let someModelSubjects = self.subjects.map({$0.model})
-            if !self.model.subjects.compare(to: someModelSubjects){
-                self.model.subjects = someModelSubjects
-            }
-        }
-    }*/
 
     @Published
     public var subjects: [SubjectVM] = [] {
@@ -85,53 +92,36 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
             if !model.subjects.compare(to: someModelSubjects){
                 model.subjects = subjects.map({$0.model})
             }
+            self.notifyChanged()
         }
     }
 
-    /*@Published
-    var matieres: [MatiereVm] = [] {
-        didSet{
-            if (self.model.matieres.count != self.matieres.count){
-                var data: [Matiere] = []
-                for i in self.matieres{
-                    data.append(Matiere(desc: i.desc, Name: i.name, Coeff: i.coeff, Moyenne: i.moyenne))
-                }
-                self.model.matieres = data
-            }
+    func calculateNote() {
+        if(subjects.count == 0){
+            average = 0
+            return
         }
-    }*/
+        let coefficientTotal: Double = subjects.reduce(0.0) { result, subject in
+            result + Double(subject.coefficient)
+        }
 
+        let notetotal: Double = subjects.reduce(0.0) { result, subject in
+            let note: Double = Double(subject.average) * Double(subject.coefficient)
+            return result + note
+        }
 
+        average = notetotal / coefficientTotal
+    }
+
+    func update(from subjectVM: SubjectVM){
+        if let index = self.model.subjects.firstIndex(of: subjectVM.model){
+            self.model.subjects[index] = subjectVM.model
+        }
+        calculateNote()
+        self.objectWillChange.send()
+    }
+    
+    func notifyChanged(){
+        managerVM?.update(from: self)
+    }
 }
-
-
-/*let someModelNounours = self.someNounoursVM.map({$0.model})
-if !self.model.someNounours.compare(to: someModelNounours){
-    self.model.someNounours = someNounoursVM.map({$0.model})
-}*/
-
-
-//    @Published
-//    var subjects: [SubjectVM] = [] {
-//        didSet {
-//            /*            if self.model.subjects.count != self.subjects.count ||
-//             !self.model.subjects.allSatisfy({subject in
-//             self.subjects.contains(sVM in sVM.model.id == subject.id)
-//             }) {
-//             self.model.subjects = self.subjects.map({$0.model})
-//             }
-//             self.model.subjects = self.subjects.map({$0.model})*/
-//        }
-//    }
-
-
-        /*didSet {
-            if self.model.someNounours.count != self.someNounours.count ||
-            !self.model.someNounours.allSatisfy({nounours in
-            self.someNounours.contains(nVM in nVM.model.id == nounours.id)
-            }) {
-                self.model.someNounours = self.someNounours.map({$0.model})
-            }
-            self.model.someNounours = self.someNounours.map({$0.id})
-        }*/
-

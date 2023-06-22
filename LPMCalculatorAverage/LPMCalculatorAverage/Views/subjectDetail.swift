@@ -16,50 +16,62 @@ struct SubjectDetail: View {
     @State private var isLocked: Bool = false
 
     var body: some View {
-        let note = ((self.scale/1.5)*10)
-        let vrainote = note >= 20 ? 20 : note <= 0 ? 0 : note
-        
+        let note = Binding<Double>(
+                get: { subjectVM.average },
+                set: { newValue in
+                    subjectVM.average = newValue >= 20 ? 20 : newValue <= 0 ? 0 : newValue
+                    scale = CGFloat(newValue) / 10 * 1.5
+                }
+        )
+        let capsuleSize = calculateCapsuleSize(note: note.wrappedValue)
+
         HStack{
             Button(action: {
                 isLocked.toggle()
                 subjectVM.isLocked = isLocked
             }){
                 Image(systemName: isLocked ? "lock.fill" : "lock.open")
-                    .foregroundColor(Color.blue)
+                        .foregroundColor(Color.blue)
             }
-            
-            
+
             VStack{
                 HStack{
                     Text(subjectVM.name)
                     Spacer()
                     Text("\(subjectVM.coefficient)")
-                        .padding(.trailing, 30)
+                            .padding(.trailing, 30)
                 }
-                .padding(.leading, 20)
-                .padding(.bottom, 15)
-                
+                        .padding(.leading, 20)
+                        .padding(.bottom, 15)
+
                 HStack {
                     Capsule()
-                        .fill(scale >= 1.5 ? Color.green : Color.red)
-                        .frame(width: self.capsuleSize * (scale >= 3.0 ? 3.1 : scale <= 0.1 ? 0.1 : scale), height: 25)
+                            .fill(note.wrappedValue >= 10 ? Color.green : Color.red)
+                            .frame(width: capsuleSize/*self.capsuleSize * (scale >= 3.0 ? 3.1 : scale <= 0.1 ? 0.1 : scale)*/, height: 25)
                             .gesture(
                                     isLocked ? nil : DragGesture()
-                                    .onChanged { value in
-                                        self.scale = 1 + value.translation.width / self.capsuleSize
-                                    }
+                                            .onChanged { value in
+                                                self.scale = 1 + value.translation.width / self.capsuleSize
+                                                note.wrappedValue = Double(self.scale / 1.5 * 10)
+                                            }
                             )
-                    
-                    Text("\(vrainote, specifier: "%.2f")")
+
+                    Text("\(note.wrappedValue, specifier: "%.2f")")
                     Spacer()
                 }
                 Divider()
             }
-            
         }
-        
+    }
+
+    func calculateCapsuleSize(note: Double) -> CGFloat {
+        let scaledNote = (note / 10) * 1.5
+        let clampedNote = max(0.1, min(3.0, scaledNote))
+        let capsuleSize = UIScreen.main.bounds.width * 0.15
+        return capsuleSize * clampedNote
     }
 }
+
 
 struct SubjectDetail_Previews: PreviewProvider {
     static var previews: some View {

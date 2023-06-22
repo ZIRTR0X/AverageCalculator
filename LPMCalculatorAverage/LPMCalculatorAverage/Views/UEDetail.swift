@@ -14,8 +14,9 @@ struct UEDetail: View {
     var showEdit: Bool = false
     
     var body: some View {
-        let scaledNote = (ueVM.average / 10) * 1.5
-        let capsuleSize = calculateCapsuleSize(note: ueVM.average)
+        let note = ueVM.average
+        let scaledNote = (note / 10) * 1.5
+        let capsuleSize = calculateCapsuleSize(note: note)
 
         HStack{
             
@@ -24,6 +25,8 @@ struct UEDetail: View {
                     Text(ueVM.name)
                     Spacer()
                     Text("\(ueVM.coefficient)")
+                        .padding(.trailing, 30)
+                    Text("\(ueVM.average, specifier: "%.2f")")
                         .padding(.trailing, 30)
                 }
                 .padding(.leading, 20)
@@ -46,10 +49,7 @@ struct UEDetail: View {
                     .opacity(showEdit ? 1 : 0)
                     .disabled(!showEdit)
             }
-
-            
         }
-        
     }
 
     func calculateCapsuleSize(note: Double) -> CGFloat {
