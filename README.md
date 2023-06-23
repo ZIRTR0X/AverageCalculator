@@ -12,6 +12,8 @@ Ce projet est un calculateur de moyenne pour les étudiants permettant de calcul
 
 - Modification d'un UE
     - Modification automatique de la moyenne de l'UE en fonction des notes des cours
+    - Modification des coefficients de l'UE
+    - Modification du nom de l'UE
 
 ## Cours
 
