@@ -11,6 +11,7 @@
 		C182FD032813DB511238F150 /* subjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182F9A6B34A361536F4F99C /* subjectDetail.swift */; };
 		EC65B83C2A3997C9006F101C /* Stub in Frameworks */ = {isa = PBXBuildFile; productRef = EC65B83B2A3997C9006F101C /* Stub */; };
 		ECA546152A45007D00E40D36 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = ECA546142A45007D00E40D36 /* Data */; };
+		ECA546172A451D9D00E40D36 /* EditSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA546162A451D9D00E40D36 /* EditSubject.swift */; };
 		ECAD03432A1F85D3000F33D2 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03422A1F85D3000F33D2 /* home.swift */; };
 		ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03442A1F867B000F33D2 /* blocs.swift */; };
 		ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		C182F18CB23E0B3DFD4435CD /* EditUE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUE.swift; sourceTree = "<group>"; };
 		C182F9A6B34A361536F4F99C /* subjectDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subjectDetail.swift; sourceTree = "<group>"; };
+		ECA546162A451D9D00E40D36 /* EditSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubject.swift; sourceTree = "<group>"; };
 		ECAD03422A1F85D3000F33D2 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		ECAD03442A1F867B000F33D2 /* blocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blocs.swift; sourceTree = "<group>"; };
 		ECAD03482A1F86CA000F33D2 /* UEsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEsDetails.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				ECAD034C2A1F8705000F33D2 /* UEPage.swift */,
 				C182F9A6B34A361536F4F99C /* subjectDetail.swift */,
 				C182F18CB23E0B3DFD4435CD /* EditUE.swift */,
+				ECA546162A451D9D00E40D36 /* EditSubject.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				ECFD02DD2A1CE78B0090F9C4 /* LPMCalculatorAverageApp.swift in Sources */,
 				ECAD03452A1F867B000F33D2 /* blocs.swift in Sources */,
+				ECA546172A451D9D00E40D36 /* EditSubject.swift in Sources */,
 				ECAD03432A1F85D3000F33D2 /* home.swift in Sources */,
 				ECAD03492A1F86CA000F33D2 /* UEsDetails.swift in Sources */,
 				ECAD034B2A1F86EA000F33D2 /* UEDetail.swift in Sources */,

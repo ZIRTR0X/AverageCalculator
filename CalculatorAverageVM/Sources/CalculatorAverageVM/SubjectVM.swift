@@ -79,4 +79,32 @@ public class SubjectVM : ObservableObject, Identifiable, Equatable {
             }
         }
     }
+
+    @Published
+    public var isEditing: Bool = false
+
+    private var copy: SubjectVM { SubjectVM(withSubject: self.model) }
+
+    public var editedCopy: SubjectVM?
+
+    public func onEditing(){
+        editedCopy = self.copy
+        isEditing = true
+    }
+
+    public func onEdited(isCancelled cancel: Bool = false) {
+        if !cancel {
+            if let editedCopy = editedCopy {
+                self.model = editedCopy.model
+            }
+        }
+        editedCopy = nil
+        isEditing = false
+    }
+
+    public func setSubjectEditedCopy() -> SubjectVM {
+        onEditing()
+        return editedCopy!
+    }
+
 }
