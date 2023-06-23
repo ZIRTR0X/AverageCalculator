@@ -8,19 +8,19 @@ public struct StubData {
     public let ueVMs: [UEVM];
 
     private let ues: [UE] = [
-        UE(withName: "UE 1 : Génie Logiciel", andAverage: 10, andCoefficent: 6, andSubjects: [
+        UE(withName: "UE 1 : Génie Logiciel", andAverage: 0, andCoefficent: 6, andSubjects: [
         ], andState: StateAverage.Preview),
-        UE(withName: "UE 2 : Systèmes et réseaux", andAverage: 9, andCoefficent: 6, andSubjects: [], andState: StateAverage.Preview),
-        UE(withName: "UE 3 : Insertion Professionnelle", andAverage: 11, andCoefficent: 6, andSubjects: [], andState: StateAverage.Preview),
-        UE(withName: "UE 4 : Technologies Mobiles 1", andAverage: 20, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview),
+        UE(withName: "UE 2 : Systèmes et réseaux", andAverage: 0, andCoefficent: 6, andSubjects: [], andState: StateAverage.Preview),
+        UE(withName: "UE 3 : Insertion Professionnelle", andAverage: 0, andCoefficent: 6, andSubjects: [], andState: StateAverage.Preview),
+        UE(withName: "UE 4 : Technologies Mobiles 1", andAverage: 0, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview),
         UE(withName: "UE 5 : Technologies Mobiles 2", andAverage: 0, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview),
-        UE(withName: "UE 6 : Projet", andAverage: 0.1, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview, andIsProject: true),
+        UE(withName: "UE 6 : Projet", andAverage: 0, andCoefficent: 9, andSubjects: [], andState: StateAverage.Preview, andIsProject: true),
         UE(withName: "UE 7 : Stage", andAverage: 0, andCoefficent: 15, andSubjects: [], andState: StateAverage.Preview, andIsProject: true)
     ]
     private var subjectsVM: [[SubjectVM]] = [[],[],[],[],[],[],[]]
     private let subjects: [[Subject]] = [
         [
-            Subject(withName: "Processus de développement", andAverage: 10, andCoefficent: 4, andIsLocked: false),
+            Subject(withName: "Processus de développement", andAverage: 0, andCoefficent: 4, andIsLocked: false),
             Subject(withName: "Programmation Objets", andAverage: 0, andCoefficent: 9, andIsLocked: false),
             Subject(withName: "Qualité de développpement", andAverage: 0, andCoefficent: 5, andIsLocked: false),
             Subject(withName: "Remise à niveau objets", andAverage: 0, andCoefficent: 4, andIsLocked: false)
@@ -47,13 +47,15 @@ public struct StubData {
             Subject(withName: "Architecture de projets C# .NET (2)", andAverage: 0, andCoefficent: 4, andIsLocked: false),
             Subject(withName: "Client/Serveur", andAverage: 0, andCoefficent: 4, andIsLocked: false),
             Subject(withName: "iOS", andAverage: 0, andCoefficent: 5, andIsLocked: false),
-            Subject(withName: "Multiplateforme", andAverage: 0, andCoefficent: 4, andIsLocked: false)
+            Subject(withName: "Multiplateforme", andAverage: 0, andCoefficent: 3, andIsLocked: false),
+            Subject(withName: "QT Quick", andAverage: 0, andCoefficent: 5, andIsLocked: false),
+            Subject(withName: "Xamarin", andAverage: 0, andCoefficent: 5, andIsLocked: false)
         ],
         [
-            Subject(withName: "Projet", andAverage: 0, andCoefficent: 9, andIsLocked: false)
+            Subject(withName: "Projet", andAverage: 0, andCoefficent: 1, andIsLocked: false)
         ],
         [
-            Subject(withName: "Stage", andAverage: 0, andCoefficent: 15, andIsLocked: false)
+            Subject(withName: "Stage", andAverage: 0, andCoefficent: 1, andIsLocked: false)
         ]
     ]
 
