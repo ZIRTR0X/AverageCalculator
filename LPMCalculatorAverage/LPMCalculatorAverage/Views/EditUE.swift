@@ -8,18 +8,21 @@ import CalculatorAverageVM
 struct EditUE: View {
     @StateObject
     var ue: UEVM
+    @ObservedObject
+    var ueEditedCopy: UEVM
+    @State private var editedName = ""
 
     var body : some View {
        NavigationStack {
            ScrollView {
                HStack {
                    Text("Nom")
-                   TextField("Nom", text: $ue.name)
+                   TextField("Nom", text: $ueEditedCopy.name)
                    Spacer()
                }
                HStack {
                    Text("Coefficient")
-                   TextField("Coefficient", value: $ue.coefficient, formatter: NumberFormatter())
+                     TextField("Coefficient", value: $ueEditedCopy.coefficient, formatter: NumberFormatter())
                    Spacer()
                }
                Spacer()
@@ -27,7 +30,6 @@ struct EditUE: View {
                    .toolbar{
                        ToolbarItem(id: "done", placement: .confirmationAction){
                            Button(action: {
-                               ue.isEditing.toggle()
                                ue.onEdited()
                            }){
                                Text("Done")
@@ -35,7 +37,6 @@ struct EditUE: View {
                        }
                        ToolbarItem(id: "cancel", placement: .cancellationAction){
                            Button(action: {
-                               ue.isEditing.toggle()
                                ue.onEdited(isCancelled: true)
                            }){
                                Text("Cancel")

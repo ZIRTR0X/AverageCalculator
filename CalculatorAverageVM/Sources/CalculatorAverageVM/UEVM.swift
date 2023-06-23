@@ -109,7 +109,7 @@ public class UEVM : ObservableObject, Identifiable , Equatable{
 
     private var copy: UEVM { UEVM(withModel: self.model) }
 
-    var editedCopy: UEVM?
+    public var editedCopy: UEVM?
 
     public func onEditing(){
         editedCopy = self.copy

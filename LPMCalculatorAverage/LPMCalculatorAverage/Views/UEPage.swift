@@ -44,12 +44,12 @@ struct UEPage: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        ueVM.isEditing.toggle()
+                        ueVM.onEditing()
                     }) {
                         Image(systemName: "pencil.circle.fill")
                     }
                     .sheet(isPresented: $ueVM.isEditing) {
-                        EditUE(ue: ueVM)
+                        EditUE(ue: ueVM, ueEditedCopy: ueVM.editedCopy!)
                     }
                 }
             }
