@@ -19,6 +19,8 @@ Ce projet est un calculateur de moyenne pour les étudiants permettant de calcul
 
 - Modification cours
     - Modifier la note d'un cours
+    - Modifier le coefficient d'un cours
+    - Modifier le nom d'un cours
 
 ## Persistance
 
